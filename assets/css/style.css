@@ -1,10 +1,287 @@
 @charset "UTF-8";
+#mv{
+   margin-top: 8.1rem; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
 
+#mv h2{
+    font-size: 4rem;
+    margin-bottom: 12.33rem;
+}
 
+#mv img{
+    width: 45rem;
+    margin-bottom: 13.62rem;
+}
 
+/* about */
 
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17.1rem;
+}
 
+#about img{
+    width: 50.4rem;
+}
+
+#about .wrap{
+    margin-left: 13.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#about .wrap p{
+    line-height: 2;
+    font-size: 1.8rem;
+}
+
+#about .wrap a{
+    font-size: 2.4rem;
+    color: white;
+    width: 28.7rem;
+    text-align: center;
+    padding: 1.45rem 0;
+    background: linear-gradient(to bottom, #876A20, #DCAD3B, #876A20);
+    box-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 16%);
+}
+
+#about .wrap a:hover{
+    box-shadow: inset .3rem .3rem 5rem rgba(0, 0, 0, 16%);
+}
+
+/* value */
+
+#value{
+    margin-bottom: 10rem;
+}
+
+#value h2{
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+#value p{
+    width: 45%;
+    margin: auto;
+    line-height: 2;
+}
+
+#value p+p{
+    margin-top: 2.2rem;
+}
+
+/* info */
+
+#info{
+    width: 66.66%;
+    margin: auto;
+    margin-bottom: 10rem;
+    background: #38383C;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#info::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 1.5rem;
+    left: 0;
+    background: #876A20;
+}
+
+#info picture{
+    position: relative;
+    z-index: 10;
+}
+
+#info img{
+    width: 100%;
+}
+
+#info h2{
+    margin-top: 10rem;
+    margin-bottom: 8.3rem;
+    text-align: center;
+    color: white;
+}
+
+#info .wrap{
+    width: 46rem;
+    margin: auto;
+}
+
+#info .wrap div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 4.4rem;
+}
+
+#info .wrap div h3{
+    font-size: 2.2rem;
+    font-weight: normal;
+    width: 15rem;
+}
+
+#info .map{
+    width: 65%;
+    height: 42.1rem;
+    margin: 1.6rem auto 3rem;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+
+#contact h2{
+    text-align: center;
+    margin-bottom: 3.3rem;
+}
+
+#contact p{
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 4rem;
+}
+
+#contact a{
+    width: 48.4rem;
+    text-align: center;
+    color: white;
+    padding: 1.05rem 0;
+    font-size: 2.2rem;
+    background: linear-gradient(to bottom, #876A20, #DCAD3B, #876A20);
+    box-shadow: .3rem .3rem .6rem rgba(158, 0, 0, 16%);
+}
+
+#contact a:hover{
+    box-shadow: inset .3rem .3rem .6rem rgba(0, 0, 0, 16%);
+}
 
 @media screen and (max-width: 767px){
-    
+    #mv{
+        margin-top: 3.2rem;
+    }
+
+    #mv h2{
+        font-size: 2rem;
+        margin-bottom: 3.72rem;
+    }
+
+    #mv img{
+        width: 23.246rem;
+        margin-bottom: 3.16rem;
+    }
+
+    /* about */
+    #about{
+        flex-direction: column;
+        margin-bottom: 6.5rem;
+    }
+
+    #about img{
+        width: 18.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #about .wrap{
+        margin-left: 0;
+        width: 80%;
+        align-items: center;
+    }
+
+    #about .wrap p{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    #about .wrap a{
+        font-size: 1.4rem;
+        width: 16.1rem;
+        padding: .8rem 0;
+    }
+
+    /* value */
+    #value{
+        margin-bottom: 4.5rem;
+    }
+
+    #value h2{
+        margin-bottom: 2.9rem;
+    }
+
+    #value p{
+        width: 80%;
+    }
+
+    #value p+p{
+        margin-top: 1.4rem;
+    }
+
+    /* info */
+    #info{
+        width: 100%;
+        margin-bottom: 4.3rem;
+    }
+
+    #info h2{
+        margin: 4.3rem 0 2.9rem;
+    }
+
+    #info .wrap{
+        width: 28.5rem;
+    }
+
+    #info .wrap div{
+        margin-bottom: 2.3rem;
+    }
+
+    #info .wrap div h3{
+        font-size: 1.4rem;
+        width: 8.8rem;
+    }
+
+    #info .map{
+        width: 100%;
+        z-index: 10;
+        height: 19rem;
+        margin-bottom: 1rem;
+    }
+
+    /* contact */
+
+    #contact{
+        margin-bottom: 6.5rem;
+    }
+
+    #contact h2{
+        margin-bottom: 3.1rem;
+    }
+
+    #contact p{
+        margin-bottom: 1.5rem;
+    }
+
+    #contact a{
+        font-size: 1.4rem;
+        width: 84%;
+        padding: .75rem 0;
+    }
 }
