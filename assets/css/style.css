@@ -43,6 +43,7 @@
     font-size: 1.8rem;
 }
 
+
 #about .wrap a{
     font-size: 2.4rem;
     color: white;
@@ -229,6 +230,10 @@
 
     #value p{
         width: 80%;
+    }
+
+    #value p span{
+        border-bottom: solid .1rem #876A20;
     }
 
     #value p+p{
